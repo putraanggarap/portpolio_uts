@@ -1,0 +1,513 @@
+/* GLOBAL STYLES & VARIABLES*/
+   :root {
+    --purple-accent: #6C5CE7;
+    --purple-hover: #5b4bc4;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(20, 20, 20, 0.88) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .text-purple {
+    color: var(--purple-accent) !important;
+  }
+  
+  .btn-purple {
+    background-color: var(--purple-accent);
+    border: none;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  }
+  
+  .btn-purple:hover {
+    background-color: var(--purple-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+  }
+  
+  /* animasi homepage */
+  .py-2-5 {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+  
+  /* Typing Cursor */
+  .typing-cursor {
+    animation: blink 0.8s infinite;
+    font-weight: 300;
+    color: var(--purple-accent);
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+
+ /* Frame Foto Profil & Shape */
+.profile-frame-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .profile-frame-wrapper {
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Shape Ungu di Belakang */
+.profile-bg-shape-purple {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background-color: var(--purple-accent);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morphShape 8s ease-in-out infinite alternate;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+/* Shape abu di Tengah */
+.profile-bg-shape-dark {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: #1a1a1a;
+  border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%;
+  animation: morphShapeInverse 10s ease-in-out infinite alternate;
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Frame Foto & Shape*/
+.profile-frame-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .profile-frame-wrapper {
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Shape Ungu */
+.profile-bg-shape-purple {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background-color: var(--purple-accent);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morphShape 8s ease-in-out infinite alternate;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+/* Shape Abu  */
+.profile-bg-shape-dark {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: #1a1a1a;
+  border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%;
+  animation: morphShapeInverse 10s ease-in-out infinite alternate;
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Foto */
+.profile-img {
+  position: relative;
+  z-index: 3;
+  width: 82%;
+  height: 82%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes morphShape {
+  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg) scale(1); }
+  50% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; transform: rotate(180deg) scale(1.05); }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(360deg) scale(1); }
+}
+
+@keyframes morphShapeInverse {
+  0% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%; transform: rotate(0deg); }
+  100% { border-radius: 40% 60% 70% 30% / 40% 40% 60% 60%; transform: rotate(-360deg); }
+}
+  /* SKILLS & EXPERIENCE PAGE STYLING & ANIMATIONS*/
+  .skill-badge {
+    background-color: var(--purple-accent);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.25);
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .skill-badge:hover {
+    transform: translateY(-2px);
+    background-color: var(--purple-hover);
+  }
+  
+  .tools-card {
+    background-color: #121212 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .tools-title-badge {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    background-color: #000000 !important;
+  }
+  
+  .tool-icon-wrapper {
+    width: 55px;
+    height: 55px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  }
+  
+  .tool-icon-wrapper:hover {
+    transform: translateY(-5px) scale(1.15) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5);
+  }
+  
+  .tool-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  .exp-card {
+    background-color: #141414 !important;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  
+  .exp-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--purple-accent) !important;
+  }
+  
+  /*  PROJECT PAGE STYLING, ANIMATIONS & MODAL POPUP   */
+  .project-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(108, 92, 231, 0.25) !important;
+  }
+  
+  /* Card Appearances */
+  .card-anim-1 { animation: cardFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  @keyframes cardFadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .card-anim-2 { animation: cardZoomIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; opacity: 0; }
+  @keyframes cardZoomIn {
+    0% { opacity: 0; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .card-anim-3 { animation: cardSlideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards; opacity: 0; }
+  @keyframes cardSlideInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  .stats-purple-bar {
+    background-color: var(--purple-accent);
+    width: 100%;
+  }
+  
+  .stat-pill-item {
+    background-color: #121212 !important;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /*  Popup Zoom Smooth */
+  .custom-project-modal .modal-dialog {
+    transform: scale(0.85);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .custom-project-modal.show .modal-dialog {
+    transform: scale(1);
+  }
+  
+  .custom-modal-body {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .modal-dark-body {
+    background-color: #121212 !important;
+  }
+  
+  .btn-purple-modal {
+    background-color: var(--purple-accent);
+    border: none;
+    min-width: 130px;
+    text-align: center;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  }
+  
+  .btn-purple-modal:hover {
+    background-color: var(--purple-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+  }
+  
+  /*CONTACT PAGE STYLING*/
+  .contact-info-card,
+  .contact-form-card {
+    background-color: #121212 !important;
+  }
+  
+  .social-icon-link {
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+  
+  .social-icon-link:hover {
+    transform: translateY(-4px) scale(1.1);
+  }
+  
+  .social-custom-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .custom-light-input {
+    background-color: #d9d9d9 !important;
+    border: none !important;
+    color: #000000 !important;
+    font-weight: 500;
+  }
+  
+  .custom-light-input::placeholder {
+    color: #6c757d !important;
+  }
+  
+  .custom-light-input:focus {
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 0.25rem rgba(108, 92, 231, 0.4) !important;
+  }
+  
+  .btn-purple-submit {
+    background-color: var(--purple-accent);
+    border: none;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  }
+  
+  .btn-purple-submit:hover {
+    background-color: var(--purple-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+  }
+  
+ /*footer*/
+  .footer-link {
+    transition: color 0.25s ease;
+  }
+  
+  .footer-link:hover {
+    color: var(--purple-accent) !important;
+  }
+  
+  .footer-social-link {
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+  
+  .footer-social-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  .footer-custom-icon {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  
+/*animasi navbar*/
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek saat kursor */
+.navbar-nav .nav-link:hover {
+  color: var(--purple-accent) !important;
+  transform: scale(1.05); /* Membesar halus saat di-hover/klik */
+}
+
+/* Garis Bawah  */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--purple-accent);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Animasi Muncul untuk Judul  */
+.skills-page-section h2 {
+  opacity: 0;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. Animasi Staggered pada Bar Skills */
+.skill-badge {
+  opacity: 0;
+  animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Mengatur jeda waktu kemunculan*/
+.skill-badge:nth-child(1) { animation-delay: 0.1s; }
+.skill-badge:nth-child(2) { animation-delay: 0.2s; }
+.skill-badge:nth-child(3) { animation-delay: 0.3s; }
+.skill-badge:nth-child(4) { animation-delay: 0.4s; }
+.skill-badge:nth-child(5) { animation-delay: 0.5s; }
+.skill-badge:nth-child(6) { animation-delay: 0.6s; }
+.skill-badge:nth-child(7) { animation-delay: 0.7s; }
+.skill-badge:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/*  Animasi Kotak Tools /
+.tools-card {
+  opacity: 0;
+  animation: zoomInTools 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+@keyframes zoomInTools {
+  0% { opacity: 0; transform: scale(0.9) translateX(30px); }
+  100% { opacity: 1; transform: scale(1) translateX(0); }
+}
+
+/*  Animasi Card Experience /
+.exp-card {
+  opacity: 0;
+  animation: cardFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Jeda experience */
+.row.g-4 > .col-md-4:nth-child(1) .exp-card { animation-delay: 0.4s; }
+.row.g-4 > .col-md-4:nth-child(2) .exp-card { animation-delay: 0.6s; }
+.row.g-4 > .col-md-4:nth-child(3) .exp-card { animation-delay: 0.8s; }
+
+@keyframes cardFadeUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.container > .text-center {
+  opacity: 0;
+  animation: projectFadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes projectFadeDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. Animasi Card Project Muncul Berurutan dari Bawah */
+.col-lg-4.col-md-6:nth-child(1) .project-card {
+  opacity: 0;
+  animation: projectCardUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+}
+
+.col-lg-4.col-md-6:nth-child(2) .project-card {
+  opacity: 0;
+  animation: projectCardUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+}
+
+.col-lg-4.col-md-6:nth-child(3) .project-card {
+  opacity: 0;
+  animation: projectCardUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+@keyframes projectCardUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 3. Animasi Bar Statistik Ungu di Bawah */
+.stats-purple-bar {
+  opacity: 0;
+  animation: statsFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+@keyframes statsFadeIn {
+  0% { opacity: 0; transform: translateY(20px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}

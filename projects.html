@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <span class="text-purple">Liltr</span><span class="text-white">aap.id</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="skills.html">Skill & Experience</a></li>
+          <li class="nav-item"><a class="nav-link text-white active fw-semibold" href="projects.html">Project</a></li>
+          <li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="container py-5 mt-5">
+    <div class="text-center mb-5">
+      <div class="d-inline-block px-4 py-2 rounded-pill bg-dark border border-purple text-purple fw-semibold">
+        PROJECT
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card bg-white text-dark rounded-4 p-3 shadow-lg h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="rounded-3 overflow-hidden mb-3 bg-light text-center p-2">
+              <img src="img/jeruk.png" alt="Orange" class="img-fluid rounded-3 object-fit-cover" style="height: 180px;">
+            </div>
+            <h5 class="fw-bold mb-0 text-dark">Classification Orange</h5>
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2 text-white fw-semibold w-100" data-bs-toggle="modal" data-bs-target="#modalProject1">Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card bg-white text-dark rounded-4 p-3 shadow-lg h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="rounded-3 overflow-hidden mb-3 bg-light text-center p-2">
+              <img src="img/housepredic.png" alt="House" class="img-fluid rounded-3 object-fit-cover" style="height: 180px;">
+            </div>
+            <h5 class="fw-bold mb-0 text-dark">House Predict</h5>
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2 text-white fw-semibold w-100" data-bs-toggle="modal" data-bs-target="#modalProject2">Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-card bg-white text-dark rounded-4 p-3 shadow-lg h-100 d-flex flex-column justify-content-between">
+          <div>
+            <div class="rounded-3 overflow-hidden mb-3 bg-light text-center p-2">
+              <img src="img/diabetes.png" alt="Diabetes" class="img-fluid rounded-3 object-fit-cover" style="height: 180px;">
+            </div>
+            <h5 class="fw-bold mb-0 text-dark">Diabetes Predict</h5>
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn btn-dark rounded-pill px-4 py-2 text-white fw-semibold w-100" data-bs-toggle="modal" data-bs-target="#modalProject3">Detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="row justify-content-center mt-5 pt-4">
+      <div class="col-lg-10">
+        <div class="stats-purple-bar rounded-pill p-3 d-flex justify-content-center align-items-center flex-wrap gap-3 gap-md-5 shadow-lg">
+          <div class="stat-pill-item px-4 py-2 rounded-pill text-white fw-semibold">10 Client order</div>
+          <div class="stat-pill-item px-4 py-2 rounded-pill text-white fw-semibold">01 Big company</div>
+          <div class="stat-pill-item px-4 py-2 rounded-pill text-white fw-semibold">2 year experience</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <div class="modal fade custom-project-modal" id="modalProject1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="custom-modal-body rounded-5 overflow-hidden shadow-lg">
+          <div class="bg-white p-3 text-center"><img src="img/jeruk.png" alt="Orange" class="img-fluid rounded-4" style="max-height: 250px;"></div>
+          <div class="modal-dark-body p-4 text-white">
+            <p class="fw-medium mb-3 fs-6 text-white">Proyek machine learning ini dirancang untuk melakukan klasifikasi kualitas buah jeruk (Bagus, Sedang, Jelek) berdasarkan fitur fisik seperti tebal kulit dan kadar gula.</p>
+            
+            <h6 class="fw-semibold mb-2 fs-6 text-purple">Teknologi / Library:</h6>
+            <p class="text-white small mb-3">Python, Scikit-Learn, Pandas, NumPy, Logistic Regression</p>
+            
+            <h6 class="fw-semibold mb-2 fs-6 text-purple">Fitur Utama:</h6>
+            <ul class="text-white small mb-4">
+                <li>Preprocessing data dan pembersihan nilai kosong</li>
+                <li>Training model menggunakan Logistic Regression</li>
+                <li>Evaluasi akurasi model klasifikasi buah jeruk</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://github.com/putraanggarap/orangeclasification" target="_blank" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white text-decoration-none">GitHub</a>
+              <button type="button" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade custom-project-modal" id="modalProject2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="custom-modal-body rounded-5 overflow-hidden shadow-lg">
+          <div class="bg-white p-3 text-center"><img src="img/housepredic.png" alt="House" class="img-fluid rounded-4" style="max-height: 250px;"></div>
+          <div class="modal-dark-body p-4 text-white">
+            <p class="text-white small">Machine learning untuk memprediksi harga rumah berdasarkan letak geografisnya, Rumah semakin mahal jika terletak di pesisir pantai <code>LinearReggression</code>.</p>
+                <h6 class="fw-semibold mb-2 fs-6 text-purple">Teknologi / Library:</h6>
+                <p class="text-white small">Python, pandas, NumPy, LinearReggression</p>
+                <h6 class="fw-semibold mb-2 fs-6 text-purple">Fitur Utama:</h6>
+                <ul class="text-white small">
+                    <li>memprediksi apakah rumah akan jauh lebih mahal berdasarkan letak geografisnya</li>
+                    
+                </ul>
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://github.com/putraanggarap/housepredict" target="_blank" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white text-decoration-none">GitHub</a>
+              <button type="button" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade custom-project-modal" id="modalProject3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="custom-modal-body rounded-5 overflow-hidden shadow-lg">
+          <div class="bg-white p-3 text-center"><img src="img/diabetes.png" alt="Diabetes" class="img-fluid rounded-4" style="max-height: 250px;"></div>
+          <div class="modal-dark-body p-4 text-white">
+            <p class="text-white small">Aplikasi analitik prediktif untuk mendeteksi indikasi awal penyakit diabetes pada seseorang berdasarkan parameter klinis menggunakan algoritma Support Vector Machine (SVM).</p>
+                <h6 class="fw-semibold mb-2 fs-6 text-purple">Teknologi / Library:</h6>
+                <p class="text-white small">Python, Scikit-Learn, Support Vector Classifier (SVC)</p>
+                <h6 class="fw-semibold mb-2 fs-6 text-purple">Fitur Utama:</h6>
+                <ul class="text-white small">
+                    <li>Klasifikasi biner menggunakan model SVM</li>
+                    <li>Evaluasi metrik akurasi</li>
+                </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="https://github.com/putraanggarap/diabetpredict" target="_blank" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white text-decoration-none">GitHub</a>
+              <button type="button" class="btn btn-purple-modal px-4 py-2 fw-semibold rounded-3 text-white" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Universal -->
+  <footer class="bg-black text-white py-4 border-top border-secondary border-opacity-25 mt-auto">
+    <div class="container">
+      <div class="row align-items-center gy-3 text-center text-md-start justify-content-between">
+        
+        <!-- footer -->
+        <div class="col-md-6">
+          <a class="navbar-brand fw-bold fs-5" href="index.html">
+            <span class="text-purple">Liltr</span><span class="text-white">aap.id</span>
+          </a>
+          <p class="text-white-50 small mb-0 mt-1">© 2026  Putra Anggara.</p>
+        </div>
+
+        
+        <div class="col-md-6 text-center text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a href="index.html" class="text-white-50 text-decoration-none small footer-link">Home</a></li>
+            <li class="list-inline-item mx-2"><a href="skills.html" class="text-white-50 text-decoration-none small footer-link">Skill</a></li>
+            <li class="list-inline-item mx-2"><a href="projects.html" class="text-white-50 text-decoration-none small footer-link">Project</a></li>
+            <li class="list-inline-item mx-2"><a href="contact.html" class="text-white-50 text-decoration-none small footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
